@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kranik - Programista | Strony Internetowe & Aplikacje</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Kranik<span class="accent">.</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Start</a></li>
+                <li><a href="#about" class="nav-link">O mnie</a></li>
+                <li><a href="#services" class="nav-link">Usługi</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#klienci" class="nav-link">Klienci</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Cześć, jestem <span class="accent">Kranik</span><br>
+                <span class="hero-subtitle">Programista Full-Stack</span>
+            </h1>
+            <p class="hero-description">
+                Tworzę nowoczesne strony internetowe, aplikacje webowe i mobilne. 
+                Specjalizuję się w technologiach front-end i back-end, dostarczając kompleksowe rozwiązania dla Twojego biznesu.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Skontaktuj się</a>
+                <a href="#portfolio" class="btn btn-secondary">Zobacz portfolio</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="code-animation">
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+                <div class="code-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">O mnie</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Jestem doświadczonym programistą z pasją do tworzenia innowacyjnych rozwiązań cyfrowych. 
+                        Specjalizuję się w pełnym cyklu rozwoju aplikacji - od koncepcji po wdrożenie.
+                    </p>
+                    <p>
+                        Moje doświadczenie obejmuje szeroki zakres technologii, co pozwala mi dostarczać 
+                        kompleksowe i skalowalne rozwiązania dostosowane do indywidualnych potrzeb klientów.
+                    </p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5/CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Bazy danych</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-mobile-alt"></i>
+                            <span>Mobile Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Moje usługi</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Strony internetowe</h3>
+                    <p>Nowoczesne, responsywne strony internetowe dostosowane do Twoich potrzeb. Szybkie, bezpieczne i zoptymalizowane pod SEO.</p>
+                    <ul>
+                        <li>Responsywny design</li>
+                        <li>Optymalizacja SEO</li>
+                        <li>Szybkie ładowanie</li>
+                        <li>Bezpieczeństwo</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Aplikacje webowe</h3>
+                    <p>Zaawansowane aplikacje webowe z nowoczesnym interfejsem użytkownika i solidnym backendem.</p>
+                    <ul>
+                        <li>SPA (Single Page Applications)</li>
+                        <li>API REST/GraphQL</li>
+                        <li>Bazy danych</li>
+                        <li>Autentykacja użytkowników</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Aplikacje mobilne</h3>
+                    <p>Aplikacje mobilne na iOS i Android z natywną wydajnością i doskonałym doświadczeniem użytkownika.</p>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Cross-platform</li>
+                        <li>Natywna wydajność</li>
+                        <li>App Store deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>KranikBot</h4>
+                            <p>Zaawansowany system bota na Twitcha oraz Discorda. Kompleksowe rozwiązanie do automatyzacji i zarządzania społecznościami z wieloma funkcjami interaktywnymi.</p>
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>Discord.py</span>
+                                <span>Twitch API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>System Rezerwacji Salonu</h4>
+                            <p>Pełna aplikacja do rezerwacji terminów dla salonu fryzjerskiego z kalendarzem, zarządzaniem klientami i powiadomieniami</p>
+                            <div class="portfolio-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>Mobile Banking App</h4>
+                            <p>Bezpieczna aplikacja bankowa z biometryczną autentykacją</p>
+                            <div class="portfolio-tech">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                                <span>Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h4>Corporate Website</h4>
+                            <p>Responsywna strona korporacyjna z systemem CMS</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Klienci -->
+    <section id="klienci" class="clients">
+        <div class="container">
+            <h2>Klienci</h2>
+            <p class="section-subtitle">Firmy, z którymi współpracuję</p>
+            
+            <div class="clients-slider">
+                <div class="clients-track">
+                    <!-- Przykładowe loga firm - można zastąpić rzeczywistymi -->
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDE8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 1">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDI8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 2">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDM8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 3">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDQ8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 4">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDU8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 5">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDY8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 6">
+                    </div>
+                    
+                    <!-- Duplikaty dla płynnej animacji -->
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDE8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 1">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDI8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 2">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDM8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 3">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDQ8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 4">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDU8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 5">
+                    </div>
+                    <div class="client-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTIwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjhmOGY4IiBzdHJva2U9IiNlMGUwZTAiLz4KPHRleHQgeD0iNjAiIHk9IjM1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjY2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkZpcm1hIDY8L3RleHQ+Cjwvc3ZnPgo=" alt="Firma 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Skontaktuj się ze mną</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Porozmawiajmy o Twoim projekcie</h3>
+                    <p>Masz pomysł na aplikację lub stronę internetową? Skontaktuj się ze mną, a omówimy szczegóły i znajdziemy najlepsze rozwiązanie dla Twojego biznesu.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>pawel.chrzan93@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+48 570 966 937</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokalizacja</h4>
+                            <p>Warszawa, Polska</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Imię i nazwisko *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Temat *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Wybierz temat</option>
+                            <option value="website">Strona internetowa</option>
+                            <option value="webapp">Aplikacja webowa</option>
+                            <option value="mobile">Aplikacja mobilna</option>
+                            <option value="consultation">Konsultacja</option>
+                            <option value="other">Inne</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Wiadomość *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Opisz swój projekt lub zadaj pytanie..."></textarea>
+                    </div>
+                    
+                    <div class="form-group gdpr-consent">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="gdpr-consent" name="gdpr-consent" required>
+                            <span class="checkmark"></span>
+                            <span class="consent-text">
+                                Wyrażam zgodę na przetwarzanie moich danych osobowych przez Pawła w celu udzielenia odpowiedzi na zapytanie zgodnie z 
+                                <a href="privacy-policy.html" target="_blank" class="privacy-link">polityką prywatności</a>. 
+                                Zgoda jest dobrowolna i może być wycofana w każdym czasie. *
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <div class="gdpr-info">
+                        <p><strong>Informacja o przetwarzaniu danych osobowych:</strong></p>
+                        <ul>
+                            <li><strong>Administrator:</strong> Kranik (pawel.chrzan93@gmail.com)</li>
+                            <li><strong>Cel przetwarzania:</strong> Udzielenie odpowiedzi na zapytanie</li>
+                            <li><strong>Podstawa prawna:</strong> Zgoda (art. 6 ust. 1 lit. a RODO)</li>
+                            <li><strong>Okres przechowywania:</strong> Do wycofania zgody lub realizacji celu</li>
+                            <li><strong>Prawa:</strong> Dostęp, sprostowanie, usunięcie, ograniczenie, przenoszenie, sprzeciw</li>
+                        </ul>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Kranik<span class="accent">.</span></h3>
+                    <p>Programista Full-Stack</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Start</a>
+                    <a href="#about">O mnie</a>
+                    <a href="#services">Usługi</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Kontakt</a>
+                    <a href="privacy-policy.html">Polityka prywatności</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kranik. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h4>Używamy plików cookies</h4>
+                <p>Ta strona używa plików cookies w celu zapewnienia najlepszego doświadczenia użytkownika. Kontynuując przeglądanie strony, wyrażasz zgodę na używanie plików cookies zgodnie z naszą <a href="privacy-policy.html" target="_blank">Polityką Prywatności</a>.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn-accept">Akceptuję</button>
+                <button id="declineCookies" class="btn-decline">Odrzuć</button>
+                <button id="cookieSettings" class="btn-settings">Ustawienia</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookieModal" class="cookie-modal">
+        <div class="cookie-modal-content">
+            <div class="cookie-modal-header">
+                <h3>Ustawienia plików cookies</h3>
+                <span class="cookie-close">&times;</span>
+            </div>
+            <div class="cookie-modal-body">
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-switch">
+                            <input type="checkbox" id="necessaryCookies" checked disabled>
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Niezbędne pliki cookies</h4>
+                            <p>Te pliki cookies są niezbędne do prawidłowego funkcjonowania strony i nie można ich wyłączyć.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-switch">
+                            <input type="checkbox" id="functionalCookies">
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Funkcjonalne pliki cookies</h4>
+                            <p>Te pliki cookies pozwalają na zapamiętanie Twoich preferencji i personalizację doświadczenia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-switch">
+                            <input type="checkbox" id="analyticsCookies">
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Analityczne pliki cookies</h4>
+                            <p>Te pliki cookies pomagają nam zrozumieć, jak użytkownicy korzystają z naszej strony.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cookie-modal-footer">
+                <button id="saveSettings" class="btn-save">Zapisz ustawienia</button>
+                <button id="acceptAll" class="btn-accept-all">Akceptuj wszystkie</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
