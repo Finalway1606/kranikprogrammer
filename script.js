@@ -102,9 +102,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 to_email: 'pawel.chrzan93@gmail.com'
             };
             
+            // Send main email
             emailjs.send('service_l72b2pn', 'template_4tnir7k', templateParams)
                 .then(function(response) {
                     console.log('Email sent successfully:', response);
+                    
+                    // Send auto-reply to the sender
+                    const autoReplyParams = {
+                        to_email: formObject.email,
+                        to_name: formObject.name,
+                        from_name: 'Paweł Chrzan',
+                        reply_subject: 'Dziękuję za kontakt - Portfolio Paweł Chrzan'
+                    };
+                    
+                    return emailjs.send('service_l72b2pn', 'template_vzmqhfo', autoReplyParams);
+                })
+                .then(function(autoReplyResponse) {
+                    console.log('Auto-reply sent successfully:', autoReplyResponse);
                     showNotification('Dziękuję za wiadomość! Skontaktuję się z Tobą wkrótce.', 'success');
                     contactForm.reset();
                 }, function(error) {

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatyczna odpowiedź - Portfolio Paweł Chrzan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Paweł Chrzan</div>
+            <div style="color: #666;">Full Stack Developer</div>
+        </div>
+        
+        <div class="greeting">
+            Dzień dobry {{to_name}}!
+        </div>
+        
+        <div class="content">
+            <p>Dziękuję za skontaktowanie się ze mną przez formularz na mojej stronie portfolio.</p>
+            
+            <div class="highlight">
+                <strong>Twoja wiadomość została pomyślnie dostarczona!</strong><br>
+                Skontaktuję się z Tobą tak szybko, jak to możliwe - zazwyczaj w ciągu 24 godzin.
+            </div>
+            
+            <p>W międzyczasie zapraszam do:</p>
+            <ul>
+                <li>Przejrzenia moich projektów na <a href="https://github.com/Finalway1606">GitHub</a></li>
+                <li>Odwiedzenia mojego profilu na <a href="#">LinkedIn</a></li>
+                <li>Zapoznania się z moim portfolio na stronie</li>
+            </ul>
+            
+            <p>Jeśli Twoja sprawa jest pilna, możesz również skontaktować się ze mną bezpośrednio:</p>
+        </div>
+        
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:pawel.chrzan93@gmail.com">pawel.chrzan93@gmail.com</a></p>
+            <p><strong>Telefon:</strong> <a href="tel:+48123456789">+48 123 456 789</a></p>
+            
+            <div class="social-links">
+                <a href="https://github.com/Finalway1606">GitHub</a> |
+                <a href="#">LinkedIn</a> |
+                <a href="https://finalway1606.github.io/kranikprogrammer">Portfolio</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Pozdrawiam serdecznie,<br>
+            <strong>Paweł Chrzan</strong><br>
+            Full Stack Developer</p>
+            
+            <p style="font-size: 12px; color: #999; margin-top: 20px;">
+                Ta wiadomość została wygenerowana automatycznie. Proszę nie odpowiadać na ten email.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
