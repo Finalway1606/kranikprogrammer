@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Get form data
+        // Get form data for validation
         const formData = new FormData(contactForm);
         const formObject = {};
         
@@ -92,22 +92,15 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.textContent = 'Wysyłanie...';
             submitBtn.disabled = true;
             
-            // Send email using EmailJS
-            const templateParams = {
-                from_name: formObject.name,
-                from_email: formObject.email,
-                phone: formObject.phone || 'Nie podano',
-                subject: getSubjectText(formObject.subject),
-                message: formObject.message,
-                to_email: 'pawel.chrzan93@gmail.com'
-            };
+            // Send email using EmailJS sendForm method
             
-            // Send main email
-            emailjs.send('service_l72b2pn', 'template_4tnir7k', templateParams)
+            // Send main email using sendForm method
+            console.log('Sending email with form data');
+            emailjs.sendForm('service_l72b2pn', 'template_y90r1qr', contactForm)
                 .then(function(response) {
                     console.log('Email sent successfully:', response);
                     
-                    // Send auto-reply to the sender
+                    // Send auto-reply email
                     const autoReplyParams = {
                         to_email: formObject.email,
                         to_name: formObject.name,
@@ -115,14 +108,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         reply_subject: 'Dziękuję za kontakt - Portfolio Paweł Chrzan'
                     };
                     
-                    return emailjs.send('service_l72b2pn', 'template_vzmqhfo', autoReplyParams);
+                    console.log('Sending auto-reply with params:', autoReplyParams);
+                    return emailjs.send('service_l72b2pn', 'template_gs5zg0e', autoReplyParams);
                 })
                 .then(function(autoReplyResponse) {
                     console.log('Auto-reply sent successfully:', autoReplyResponse);
                     showNotification('Dziękuję za wiadomość! Skontaktuję się z Tobą wkrótce.', 'success');
                     contactForm.reset();
-                }, function(error) {
+                })
+                .catch(function(error) {
                     console.error('Email sending failed:', error);
+                    console.error('Error details:', JSON.stringify(error, null, 2));
                     showNotification('Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie lub skontaktuj się bezpośrednio.', 'error');
                 })
                 .finally(function() {

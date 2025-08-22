@@ -625,7 +625,12 @@ body {
 }
 
 .checkbox-container input[type="checkbox"] {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
 }
 
 .checkmark {

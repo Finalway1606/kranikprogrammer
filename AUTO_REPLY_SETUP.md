@@ -5,7 +5,7 @@
 1. Zaloguj się do [EmailJS Dashboard](https://dashboard.emailjs.com/)
 2. Przejdź do sekcji **Email Templates**
 3. Kliknij **Create New Template**
-4. Ustaw **Template ID**: `template_vzmqhfo`
+4. Ustaw **Template ID**: `template_gs5zg0e`
 
 ## Krok 2: Konfiguracja szablonu
 
@@ -65,13 +65,13 @@ Upewnij się, że szablon używa następujących parametrów:
 ## Krok 5: Zapisanie szablonu
 
 1. Kliknij **Save**
-2. Upewnij się, że Template ID to `template_vzmqhfo`
+2. Upewnij się, że Template ID to `template_gs5zg0e`
 
 ## Jak to działa?
 
 Po wysłaniu formularza kontaktowego:
 1. Wysyłany jest główny email do Ciebie (`template_4tnir7k`)
-2. Automatycznie wysyłana jest odpowiedź do nadawcy (`template_vzmqhfo`)
+2. Automatycznie wysyłana jest odpowiedź do nadawcy (`template_gs5zg0e`)
 3. Nadawca otrzymuje profesjonalne podziękowanie z informacją o czasie odpowiedzi
 
 ## Uwagi:

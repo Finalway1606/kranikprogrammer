@@ -10,12 +10,15 @@
 - W panelu EmailJS przejdź do "Email Services"
 - Kliknij "Add New Service"
 - Wybierz Gmail i połącz swoje konto Gmail (pawel.chrzan93@gmail.com)
-- Zapisz Service ID (np. "service_gmail")
+- Zapisz Service ID (np. "service_l72b2pn")
 
 ### 3. Utwórz szablon email
 - Przejdź do "Email Templates"
 - Kliknij "Create New Template"
-- Użyj następującego szablonu:
+- **WAŻNE: W sekcji Settings ustaw:**
+  - **To Email:** pawel.chrzan93@gmail.com (adres odbiorcy)
+  - **From Name:** {{from_name}} (nazwa nadawcy)
+  - **Reply-To:** {{from_email}} (adres do odpowiedzi)
 
 **Temat:** Nowa wiadomość z portfolio - {{subject}}
 
@@ -35,7 +38,7 @@ Wiadomość:
 Wiadomość wysłana z portfolio Kranik
 ```
 
-- Zapisz Template ID (np. "template_contact")
+- Zapisz Template ID (np. "template_y90r1qr")
 
 ### 4. Pobierz klucze
 - Przejdź do "Account" → "General"
@@ -44,7 +47,7 @@ Wiadomość wysłana z portfolio Kranik
 ### 5. Zaktualizuj kod
 W pliku `script.js` zastąp:
 - `YOUR_PUBLIC_KEY` → Twój Public Key
-- `YOUR_SERVICE_ID` → Twój Service ID (np. "service_gmail")
+- `YOUR_SERVICE_ID` → Twój Service ID (np. "service_l72b2pn")
 - `YOUR_TEMPLATE_ID` → Twój Template ID (np. "template_contact")
 
 ### 6. Testowanie
@@ -60,7 +63,7 @@ emailjs.init({
 });
 
 // W funkcji wysyłania:
-emailjs.send('service_gmail', 'template_contact', templateParams)
+emailjs.send('service_l72b2pn', 'template_y90r1qr', templateParams)
 ```
 
 ## Uwagi:
