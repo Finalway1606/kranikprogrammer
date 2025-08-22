@@ -65,6 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
     
+    // Initialize EmailJS
+    emailjs.init({
+        publicKey: 't2MjXrEOB-VR5yYSt',
+    });
+    
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
     
@@ -87,15 +92,43 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.textContent = 'Wysyłanie...';
             submitBtn.disabled = true;
             
-            // Simulate form submission (replace with actual form handling)
-            setTimeout(() => {
-                showNotification('Dziękuję za wiadomość! Skontaktuję się z Tobą wkrótce.', 'success');
-                contactForm.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
+            // Send email using EmailJS
+            const templateParams = {
+                from_name: formObject.name,
+                from_email: formObject.email,
+                phone: formObject.phone || 'Nie podano',
+                subject: getSubjectText(formObject.subject),
+                message: formObject.message,
+                to_email: 'pawel.chrzan93@gmail.com'
+            };
+            
+            emailjs.send('service_l72b2pn', 'template_4tnir7k', templateParams)
+                .then(function(response) {
+                    console.log('Email sent successfully:', response);
+                    showNotification('Dziękuję za wiadomość! Skontaktuję się z Tobą wkrótce.', 'success');
+                    contactForm.reset();
+                }, function(error) {
+                    console.error('Email sending failed:', error);
+                    showNotification('Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie lub skontaktuj się bezpośrednio.', 'error');
+                })
+                .finally(function() {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
         }
     });
+    
+    // Helper function to get subject text
+    function getSubjectText(subjectValue) {
+        const subjects = {
+            'website': 'Strona internetowa',
+            'webapp': 'Aplikacja webowa',
+            'mobile': 'Aplikacja mobilna',
+            'consultation': 'Konsultacja',
+            'other': 'Inne'
+        };
+        return subjects[subjectValue] || subjectValue;
+    }
     
     // Form validation
     function validateForm(data) {
