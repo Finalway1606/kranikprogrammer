@@ -449,8 +449,20 @@ body {
     background: var(--gradient);
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.portfolio-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+    transition: opacity 0.3s ease;
 }
 
 .portfolio-overlay {
@@ -469,14 +481,14 @@ body {
     transition: all 0.3s ease;
 }
 
-.portfolio-item:hover .portfolio-overlay {
-    opacity: 1;
-}
+@media (min-width: 769px) {
+    .portfolio-item:hover .portfolio-overlay {
+        opacity: 1;
+    }
 
-.portfolio-overlay h4 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    .portfolio-item:hover .portfolio-title {
+        opacity: 0;
+    }
 }
 
 .portfolio-overlay p {
@@ -1193,9 +1205,27 @@ input:disabled + .cookie-slider {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .skills {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Portfolio mobile styles */
+    .portfolio-overlay {
+        opacity: 1;
+        position: relative;
+        background: rgba(15, 15, 35, 0.8);
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+
+    .portfolio-item {
+        height: auto;
+        min-height: 300px;
+    }
+
+    .portfolio-image {
+        padding: 1rem;
     }
     
     /* Clients responsive */
